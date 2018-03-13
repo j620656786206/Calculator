@@ -62,5 +62,29 @@ public class MainActivity extends AppCompatActivity {
         button8.setOnClickListener(listener);
         button9.setOnClickListener(listener);
         buttonDot.setOnClickListener(listener);
+
+        View.OnClickListener oplistener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Button b = (Button) view;
+                String op = b.getText().toString();
+                String value = newNumber.getText().toString();
+                if(value.length() != 0) {
+                    performOperation(value, op);
+                }
+                pendingOperation = op;
+                displayOperation.setText(pendingOperation);
+            }
+        };
+
+        buttonEquals.setOnClickListener(oplistener);
+        buttonDivide.setOnClickListener(oplistener);
+        buttonMultiply.setOnClickListener(oplistener);
+        buttonMinus.setOnClickListener(oplistener);
+        buttonPlus.setOnClickListener(oplistener);
+    }
+
+    private void performOperation(String value, String operation) {
+        displayOperation.setText(operation);
     }
 }
