@@ -1,1 +1,1 @@
-<img src="https://github.com/j620656786206/Calculator/blob/master/screenshot.gif" width="240">
+<img src="https://github.com/j620656786206/Calculator/blob/master/screenshot.gif" width="360">
