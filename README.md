@@ -1,1 +1,1 @@
-![alt text](https://github.com/j620656786206/Calculator/blob/master/screenshot.gif)
+<img src="https://github.com/j620656786206/Calculator/blob/master/screenshot.gif" width="120">
